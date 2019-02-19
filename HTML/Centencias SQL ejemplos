@@ -15,4 +15,11 @@ City varchar(255)
 );
 ///// Insertar elemntos  a la BD 
 INSERT INTO Persons  (PersonID, LastName, FirstName, Address, City )
-VALUES ('1', 'lucio', 'Daniquen', 'Stavanger', '362 8 Cedros', 'mexico');
+VALUES ('1', 'lucio', 'Daniquen', '362 8 Cedros', 'mexico');
+
+//// Acualizar Condiciones
+UPDATE Persons
+SET Address = 'San Felipe ', City= 'Toluca Lerdo'
+WHERE CustomerID = 5;
+/////
+DELETE FROM Persons WHERE PersonID='1';
