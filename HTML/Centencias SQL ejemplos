@@ -1,3 +1,5 @@
+*******conectar desde nube consola**** c9
+mysql-ctl cli
 /////////Crear una BD 
 CREATE DATABASE testDB;
 
