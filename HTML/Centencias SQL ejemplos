@@ -1,0 +1,18 @@
+/////////Crear una BD 
+CREATE DATABASE testDB;
+
+////////// Usar Esa Base de datos 
+USE testDB;
+
+
+//////////Crear Una Tabla 
+mysql> CREATE TABLE Persons (
+PersonID int,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255) 
+);
+///// Insertar elemntos  a la BD 
+INSERT INTO Persons  (PersonID, LastName, FirstName, Address, City )
+VALUES ('1', 'lucio', 'Daniquen', 'Stavanger', '362 8 Cedros', 'mexico');
