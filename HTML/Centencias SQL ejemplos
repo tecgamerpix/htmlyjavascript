@@ -25,3 +25,64 @@ SET Address = 'San Felipe ', City= 'Toluca Lerdo'
 WHERE CustomerID = 5;
 /////
 DELETE FROM Persons WHERE PersonID='1';
+
+**** Crear Tablas 
+CREATE tablename(
+campo1 INTERGER,
+campo2 TEXT,
+campo3 DATE );
+
+****Añadir Valores A las Tablas 
+
+INSERT INTO tablename(campo1,campo2,campo3)
+VALUES(1,'PRUEBA','2-1998.);
+
+***** Modificar valor especifico tabla
+UPDATE table_name
+SET column1 = value1
+WHERE condition;
+***EJmp.
+UPDATE friends
+ SET name ='Jane Doe Smith'
+ WHERE id = 1;
+
+
+***** Modificar Tablas 
+ALTER TABLE table_name
+ADD COLUMN column DATA_TYPE;
+***ejemplo
+ALTER TABLE friends 
+ADD COLUMN email TEXT;
+
+**** Borrar un registro 
+DELET FROM table_name
+WHERE  Condition
+****Ejemplo
+DELETE FROM friends
+WHERE id = 1;
+
+ *** el uso del AS *** añade un alias al campo 
+SELECT name AS 'Titles'
+FROM tablename;
+
+*** el uso de DISTINCT para filtrar 
+Permite unificar  los campos si son diferentes para no mostrar repetidos 
+ejemplo::::
+SELECT DISTINCT year 
+FROM movies;
+
+*** Mostar Campos Especificos 
+eJEMPLO
+SELECT *
+FROM movies 
+WHERE imdb_rating < 5;
+
+***** LIKE: Busca Material que contenga lo  indicado
+ejemplo 
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+
+
+
